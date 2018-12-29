@@ -1,0 +1,19 @@
+body {
+  background: #dee0f0;
+}
+
+.time {
+  -webkit-animation: rotation 2s infinite linear;
+  height: 38px;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+

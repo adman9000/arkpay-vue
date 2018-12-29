@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ArkPay Demo</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="/iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+        <script src="js/app.js" defer></script>
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <main role="main" class="container">
+
+         <div class='row'>
+
+                <div class='col-sm-12'>
+                    <h1>ArkPay with Vue & Bootstrap 4</h1>
+
+                    <p>Based on original <a href="https://github.com/ArkEcosystem/pay-demo-vue" target="_blank">vue example</a>. I have converted it into a 'Base' component which handles the essential functionality and imported this into 3 separate example components with different templates and functionality on each.</p>
+
+                    <ul>
+                    <li><b>Example 1</b> is basically the original example in bootstrap, with the same address & amount & still on devnet. I'm not sure why the timer facility is needed as it's not mentioned in the <a href='https://docs.ark.io/cookbook/pay/installation.html' target="_blank">documentation</a> so I've removed the alert & page reload for now.</li>
+
+                    <li><b>Example 2</b> allows you to make a payment to any address on dev or mainnet. ATM you need to hit 'prepare' once you have configured it in order to set up the payment data, however this functionality could be incorporated into the pay now button. <span class='text-danger'><b>BUG:</b> </span>If you change the fiat amount and click 'Prepare' you can see that the Ark amount is calculated incorrectly. I believe this is a bug in Arkpay itself and have raised an issue on their github repo.</li>
+
+                    <li><b>Example 3</b> is just to demonstrate to anyone non technical that the address, amount etc doesn't need displaying at all for this to work, in fact it would be trivially easy for a developer/webmaster to display a different amount to that which is then passed to the Ark wallet, so it is very important to check any payments you make! It could use some nicer buttons but I'm not a designer. Currently set on mainnet, my address, $1 ;-) </li>
+                </ul>
+
+                <p>The original <a href="https://blog.ark.io/introducing-ark-pay-start-accepting-ark-in-your-store-today-c024d0f026f" target-"_blank">blog article</a> has instructions on getting some dev tokens if you want to play around on devnet</p>
+    <p>For anyone trying to implement Arkpay themselves, I've used vue in development mode and outputted a few things to console that may help you see how this version works. I'll chuck the code on github in case it's of use to anyone and I've created a reddit post about it so message me there if you have any questions.</p>
+
+            </div>
+        </div>
+
+        <div id="app" class='container'>
+
+            <div class='row justify-content-center' style='margin-bottom:15px;'>
+
+                <div class='col col-lg-6'>
+
+                    <h2>Example 1</h2>
+
+                    <example-component></example-component>
+
+                </div>
+
+            </div>
+
+           <div class='row justify-content-center' style='margin-bottom:15px;'>
+
+                <div class='col col-lg-6'>
+
+                    <h2>Example 2</h2>
+
+                    <example-component-2></example-component-2>
+
+                </div>
+                </div>
+            
+           <div class='row justify-content-center'>
+
+                <div class='col col-lg-6'>
+
+                    <h3>Example 3</h3>
+
+                    <example-component-3></example-component-3>
+
+                </div>
+ </div>
+        </div>
+    </div>
+
+ <div class='row'>
+
+                <div class='col-sm-12'>
+
+                
+
+                </div>
+            </div>
+</main>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -8,14 +8,18 @@
                             </a>
                         </div>
 
+            <div class='row justify-content-center'>
+                <div class=''>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button
+                <button style='width:50%;'
                     @click="changeMethod('qrcode')"
                     :class="{ 'btn-primary': method === 'qrcode', 'btn-secondary': method === 'address' }"
                     class="btn">Show QR-Code</button>
 
-                    <a :href="scanLink" class='btn btn-outline-primary'><img src='/images/pay.png' class='img-fluid'/></a>
+                    <a :href="scanLink" class='' style='width:50%;'><img src='images/pay.png' class='img-fluid'/></a>
 
+            </div>
+            </div>
             </div>
             </div>
 

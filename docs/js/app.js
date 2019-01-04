@@ -1,66 +1,66 @@
 /******/ (function(modules) { // webpackBootstrap
-/******/  // The module cache
-/******/  var installedModules = {};
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
 /******/
-/******/  // The require function
-/******/  function __webpack_require__(moduleId) {
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
 /******/
-/******/    // Check if module is in cache
-/******/    if(installedModules[moduleId]) {
-/******/      return installedModules[moduleId].exports;
-/******/    }
-/******/    // Create a new module (and put it into the cache)
-/******/    var module = installedModules[moduleId] = {
-/******/      i: moduleId,
-/******/      l: false,
-/******/      exports: {}
-/******/    };
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
 /******/
-/******/    // Execute the module function
-/******/    modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/
-/******/    // Flag the module as loaded
-/******/    module.l = true;
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
 /******/
-/******/    // Return the exports of the module
-/******/    return module.exports;
-/******/  }
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
 /******/
 /******/
-/******/  // expose the modules object (__webpack_modules__)
-/******/  __webpack_require__.m = modules;
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
 /******/
-/******/  // expose the module cache
-/******/  __webpack_require__.c = installedModules;
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/  // define getter function for harmony exports
-/******/  __webpack_require__.d = function(exports, name, getter) {
-/******/    if(!__webpack_require__.o(exports, name)) {
-/******/      Object.defineProperty(exports, name, {
-/******/        configurable: false,
-/******/        enumerable: true,
-/******/        get: getter
-/******/      });
-/******/    }
-/******/  };
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
 /******/
-/******/  // getDefaultExport function for compatibility with non-harmony modules
-/******/  __webpack_require__.n = function(module) {
-/******/    var getter = module && module.__esModule ?
-/******/      function getDefault() { return module['default']; } :
-/******/      function getModuleExports() { return module; };
-/******/    __webpack_require__.d(getter, 'a', getter);
-/******/    return getter;
-/******/  };
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
 /******/
-/******/  // Object.prototype.hasOwnProperty.call
-/******/  __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
-/******/  // __webpack_public_path__
-/******/  __webpack_require__.p = "/";
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
 /******/
-/******/  // Load entry module and return exports
-/******/  return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -381,16 +381,16 @@ var g;
 
 // This works in non-strict mode
 g = (function() {
-  return this;
+	return this;
 })();
 
 try {
-  // This works if eval is allowed (see CSP)
-  g = g || Function("return this")() || (1,eval)("this");
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
 } catch(e) {
-  // This works if the window reference is available
-  if(typeof window === "object")
-    g = window;
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
 }
 
 // g can still be undefined, but nothing to do about it...
@@ -12650,11 +12650,11 @@ var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 
 
 
 function unwrapExports (x) {
-  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
 
 function createCommonjsModule(fn, module) {
-  return module = { exports: {} }, fn(module, module.exports), module.exports;
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
 function select(element) {
@@ -13550,7 +13550,7 @@ function vueClipboards (Vue) {
 var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function createCommonjsModule(fn, module) {
-  return module = { exports: {} }, fn(module, module.exports), module.exports;
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
 var qrious = createCommonjsModule(function (module, exports) {
@@ -17179,6 +17179,8 @@ module.exports = class ArkPay extends Emittery {
     vendorField (value) {
       this.data.transfer.vendorField = value
 
+      if (value.length > 64) throw new Error('The given value exceeds the maximum length of 64 characters.')
+
       return this
     }
 
@@ -17452,7 +17454,7 @@ module.exports = class ArkPay extends Emittery {
       const entity = {
         ip: peer.ip,
         port: peer.port || 4003,
-        protocol: peer.protocol || 'http',
+        protocol: peer.protocol || 'http'
       }
 
       if (![4003, 8443].includes(entity.port)) {
@@ -21208,7 +21210,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalObject) {
   // AMD.
   if (true) {
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () { return BigNumber; }).call(exports, __webpack_require__, exports, module),
-        __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
   // Node.js and other environments that support module.exports.
   } else if (typeof module != 'undefined' && module.exports) {
@@ -21237,148 +21239,148 @@ const eventsMap = new WeakMap();
 const resolvedPromise = Promise.resolve();
 
 function assertEventName(eventName) {
-  if (typeof eventName !== 'string') {
-    throw new TypeError('eventName must be a string');
-  }
+	if (typeof eventName !== 'string') {
+		throw new TypeError('eventName must be a string');
+	}
 }
 
 function assertListener(listener) {
-  if (typeof listener !== 'function') {
-    throw new TypeError('listener must be a function');
-  }
+	if (typeof listener !== 'function') {
+		throw new TypeError('listener must be a function');
+	}
 }
 
 function getListeners(instance, eventName) {
-  const events = eventsMap.get(instance);
-  if (!events.has(eventName)) {
-    events.set(eventName, new Set());
-  }
+	const events = eventsMap.get(instance);
+	if (!events.has(eventName)) {
+		events.set(eventName, new Set());
+	}
 
-  return events.get(eventName);
+	return events.get(eventName);
 }
 
 class Emittery {
-  constructor() {
-    anyMap.set(this, new Set());
-    eventsMap.set(this, new Map());
-  }
+	constructor() {
+		anyMap.set(this, new Set());
+		eventsMap.set(this, new Map());
+	}
 
-  on(eventName, listener) {
-    assertEventName(eventName);
-    assertListener(listener);
-    getListeners(this, eventName).add(listener);
-    return this.off.bind(this, eventName, listener);
-  }
+	on(eventName, listener) {
+		assertEventName(eventName);
+		assertListener(listener);
+		getListeners(this, eventName).add(listener);
+		return this.off.bind(this, eventName, listener);
+	}
 
-  off(eventName, listener) {
-    assertEventName(eventName);
-    assertListener(listener);
-    getListeners(this, eventName).delete(listener);
-  }
+	off(eventName, listener) {
+		assertEventName(eventName);
+		assertListener(listener);
+		getListeners(this, eventName).delete(listener);
+	}
 
-  once(eventName) {
-    return new Promise(resolve => {
-      assertEventName(eventName);
-      const off = this.on(eventName, data => {
-        off();
-        resolve(data);
-      });
-    });
-  }
+	once(eventName) {
+		return new Promise(resolve => {
+			assertEventName(eventName);
+			const off = this.on(eventName, data => {
+				off();
+				resolve(data);
+			});
+		});
+	}
 
-  async emit(eventName, eventData) {
-    assertEventName(eventName);
+	async emit(eventName, eventData) {
+		assertEventName(eventName);
 
-    const listeners = getListeners(this, eventName);
-    const anyListeners = anyMap.get(this);
-    const staticListeners = [...listeners];
-    const staticAnyListeners = [...anyListeners];
+		const listeners = getListeners(this, eventName);
+		const anyListeners = anyMap.get(this);
+		const staticListeners = [...listeners];
+		const staticAnyListeners = [...anyListeners];
 
-    await resolvedPromise;
-    return Promise.all([
-      ...staticListeners.map(async listener => {
-        if (listeners.has(listener)) {
-          return listener(eventData);
-        }
-      }),
-      ...staticAnyListeners.map(async listener => {
-        if (anyListeners.has(listener)) {
-          return listener(eventName, eventData);
-        }
-      })
-    ]);
-  }
+		await resolvedPromise;
+		return Promise.all([
+			...staticListeners.map(async listener => {
+				if (listeners.has(listener)) {
+					return listener(eventData);
+				}
+			}),
+			...staticAnyListeners.map(async listener => {
+				if (anyListeners.has(listener)) {
+					return listener(eventName, eventData);
+				}
+			})
+		]);
+	}
 
-  async emitSerial(eventName, eventData) {
-    assertEventName(eventName);
+	async emitSerial(eventName, eventData) {
+		assertEventName(eventName);
 
-    const listeners = getListeners(this, eventName);
-    const anyListeners = anyMap.get(this);
-    const staticListeners = [...listeners];
-    const staticAnyListeners = [...anyListeners];
+		const listeners = getListeners(this, eventName);
+		const anyListeners = anyMap.get(this);
+		const staticListeners = [...listeners];
+		const staticAnyListeners = [...anyListeners];
 
-    await resolvedPromise;
-    /* eslint-disable no-await-in-loop */
-    for (const listener of staticListeners) {
-      if (listeners.has(listener)) {
-        await listener(eventData);
-      }
-    }
+		await resolvedPromise;
+		/* eslint-disable no-await-in-loop */
+		for (const listener of staticListeners) {
+			if (listeners.has(listener)) {
+				await listener(eventData);
+			}
+		}
 
-    for (const listener of staticAnyListeners) {
-      if (anyListeners.has(listener)) {
-        await listener(eventName, eventData);
-      }
-    }
-    /* eslint-enable no-await-in-loop */
-  }
+		for (const listener of staticAnyListeners) {
+			if (anyListeners.has(listener)) {
+				await listener(eventName, eventData);
+			}
+		}
+		/* eslint-enable no-await-in-loop */
+	}
 
-  onAny(listener) {
-    assertListener(listener);
-    anyMap.get(this).add(listener);
-    return this.offAny.bind(this, listener);
-  }
+	onAny(listener) {
+		assertListener(listener);
+		anyMap.get(this).add(listener);
+		return this.offAny.bind(this, listener);
+	}
 
-  offAny(listener) {
-    assertListener(listener);
-    anyMap.get(this).delete(listener);
-  }
+	offAny(listener) {
+		assertListener(listener);
+		anyMap.get(this).delete(listener);
+	}
 
-  clearListeners(eventName) {
-    if (typeof eventName === 'string') {
-      getListeners(this, eventName).clear();
-    } else {
-      anyMap.get(this).clear();
-      for (const listeners of eventsMap.get(this).values()) {
-        listeners.clear();
-      }
-    }
-  }
+	clearListeners(eventName) {
+		if (typeof eventName === 'string') {
+			getListeners(this, eventName).clear();
+		} else {
+			anyMap.get(this).clear();
+			for (const listeners of eventsMap.get(this).values()) {
+				listeners.clear();
+			}
+		}
+	}
 
-  listenerCount(eventName) {
-    if (typeof eventName === 'string') {
-      return anyMap.get(this).size + getListeners(this, eventName).size;
-    }
+	listenerCount(eventName) {
+		if (typeof eventName === 'string') {
+			return anyMap.get(this).size + getListeners(this, eventName).size;
+		}
 
-    if (typeof eventName !== 'undefined') {
-      assertEventName(eventName);
-    }
+		if (typeof eventName !== 'undefined') {
+			assertEventName(eventName);
+		}
 
-    let count = anyMap.get(this).size;
+		let count = anyMap.get(this).size;
 
-    for (const value of eventsMap.get(this).values()) {
-      count += value.size;
-    }
+		for (const value of eventsMap.get(this).values()) {
+			count += value.size;
+		}
 
-    return count;
-  }
+		return count;
+	}
 }
 
 // Subclass used to encourage TS users to type their events.
 Emittery.Typed = class extends Emittery {};
 Object.defineProperty(Emittery.Typed, 'Typed', {
-  enumerable: false,
-  value: undefined
+	enumerable: false,
+	value: undefined
 });
 
 module.exports = Emittery;
@@ -21576,13 +21578,13 @@ function bytesToUuid(buf, offset) {
   var bth = byteToHex;
   // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
   return ([bth[buf[i++]], bth[buf[i++]], 
-  bth[buf[i++]], bth[buf[i++]], '-',
-  bth[buf[i++]], bth[buf[i++]], '-',
-  bth[buf[i++]], bth[buf[i++]], '-',
-  bth[buf[i++]], bth[buf[i++]], '-',
-  bth[buf[i++]], bth[buf[i++]],
-  bth[buf[i++]], bth[buf[i++]],
-  bth[buf[i++]], bth[buf[i++]]]).join('');
+	bth[buf[i++]], bth[buf[i++]], '-',
+	bth[buf[i++]], bth[buf[i++]], '-',
+	bth[buf[i++]], bth[buf[i++]], '-',
+	bth[buf[i++]], bth[buf[i++]], '-',
+	bth[buf[i++]], bth[buf[i++]],
+	bth[buf[i++]], bth[buf[i++]],
+	bth[buf[i++]], bth[buf[i++]]]).join('');
 }
 
 module.exports = bytesToUuid;
@@ -38686,7 +38688,7 @@ module.exports = bytesToUuid;
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
       return _;
     }).call(exports, __webpack_require__, exports, module),
-        __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
   else if (freeModule) {
@@ -38708,26 +38710,26 @@ module.exports = bytesToUuid;
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
-  if(!module.webpackPolyfill) {
-    module.deprecate = function() {};
-    module.paths = [];
-    // module.parent = undefined by default
-    if(!module.children) module.children = [];
-    Object.defineProperty(module, "loaded", {
-      enumerable: true,
-      get: function() {
-        return module.l;
-      }
-    });
-    Object.defineProperty(module, "id", {
-      enumerable: true,
-      get: function() {
-        return module.i;
-      }
-    });
-    module.webpackPolyfill = 1;
-  }
-  return module;
+	if(!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
 };
 
 
@@ -39590,6 +39592,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -39652,45 +39658,50 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "btn-group",
-          attrs: { role: "group", "aria-label": "Basic example" }
-        },
-        [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", {}, [
           _c(
-            "button",
+            "div",
             {
-              staticClass: "btn",
-              class: {
-                "btn-primary": _vm.method === "qrcode",
-                "btn-secondary": _vm.method === "address"
-              },
-              on: {
-                click: function($event) {
-                  _vm.changeMethod("qrcode")
-                }
-              }
-            },
-            [_vm._v("Show QR-Code")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-outline-primary",
-              attrs: { href: _vm.scanLink }
+              staticClass: "btn-group",
+              attrs: { role: "group", "aria-label": "Basic example" }
             },
             [
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: { src: "/images/pay.png" }
-              })
+              _c(
+                "button",
+                {
+                  staticClass: "btn",
+                  class: {
+                    "btn-primary": _vm.method === "qrcode",
+                    "btn-secondary": _vm.method === "address"
+                  },
+                  staticStyle: { width: "50%" },
+                  on: {
+                    click: function($event) {
+                      _vm.changeMethod("qrcode")
+                    }
+                  }
+                },
+                [_vm._v("Show QR-Code")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticStyle: { width: "50%" },
+                  attrs: { href: _vm.scanLink }
+                },
+                [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "images/pay.png" }
+                  })
+                ]
+              )
             ]
           )
-        ]
-      )
+        ])
+      ])
     ])
   ])
 }

@@ -14,7 +14,7 @@
         "@xkeshi/vue-qrcode": "^1.0.0",
         "axios": "^0.18",
         "cross-env": "^5.1",
-        "laravel-mix": "^1.0",
+        "laravel-mix": "^6.0",
         "lodash": "^4.17.5",
         "uuid": "^3.3.2",
         "vue": "^2.5.7",
